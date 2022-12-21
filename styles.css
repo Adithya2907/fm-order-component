@@ -1,0 +1,158 @@
+:root {
+  --clr-pale: #e0e8ff;
+  --clr-bright: #3829e0;
+  --clr-bright-hover: #766cf1;
+  --clr-very-pale: #f5f7ff;
+  --clr-desaturated: #7280a7;
+  --clr-dark: #1f2f56;
+}
+
+/*===========
+    RESETS
+    ===========*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  list-style: none;
+  border: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*===========
+    STYLES
+    ===========*/
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url("/images/pattern-background-desktop.svg");
+  background-size: contain;
+  background-position: top;
+  background-color: var(--clr-pale);
+  background-repeat: no-repeat;
+  color: var(--clr-desaturated);
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  width: 450px;
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.image {
+  width: 450px;
+  height: 220px;
+}
+
+.text-area {
+  padding: 2.8125rem 3rem 3rem;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: var(--clr-dark);
+  text-align: center;
+  margin-bottom: 17px;
+}
+
+.description {
+  font-weight: 500;
+  line-height: 1.625rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.plan-box {
+  background: var(--clr-very-pale);
+  padding: 1.5rem;
+  border-radius: 11px;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+  column-gap: 20px;
+}
+
+.plan-title {
+  font-weight: 900;
+  line-height: 1.3125;
+  color: var(--clr-dark);
+  margin-bottom: 6px;
+}
+
+.right {
+  justify-self: end;
+}
+
+.change {
+  text-decoration: underline;
+  color: var(--clr-bright);
+  font-weight: 700;
+  font-size: 0.875rem;
+  transition: all 0.3s;
+}
+
+.change:hover {
+  text-decoration: none;
+  color: var(--clr-bright-hover);
+  cursor: pointer;
+}
+
+.button {
+  background-color: var(--clr-bright);
+  color: white;
+  font-weight: 900;
+  font-size: 0.9375rem;
+  line-height: 1.25rem;
+  text-align: center;
+  padding: 0.9375rem 0;
+  border-radius: 11px;
+  margin: 2rem 0;
+  box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background-color: var(--clr-bright-hover);
+  cursor: pointer;
+}
+
+.cancel {
+  text-align: center;
+  font-weight: 900;
+  font-size: 0.9375rem;
+  color: var(--clr-desaturated);
+  transition: all 0.3s;
+}
+
+.cancel:hover {
+  cursor: pointer;
+  color: black;
+}
